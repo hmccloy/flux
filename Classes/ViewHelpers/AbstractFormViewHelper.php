@@ -147,7 +147,7 @@ abstract class AbstractFormViewHelper extends AbstractViewHelper
 
     protected static function getContainerFromRenderingContext(
         RenderingContextInterface $renderingContext
-    ): Form\ContainerInterface {
+    ) {
         /** @var Form\ContainerInterface|null $container */
         $container = $renderingContext->getViewHelperVariableContainer()->get(
             static::SCOPE,
